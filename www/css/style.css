@@ -4,10 +4,44 @@
   font-size: 50px;
   padding-left: 10px;
   padding-right: 10px;
+  animation: entrada 0.5s ease;
 }
+@keyframes entrada{
+		0%{
+			transform: scale(0);
+      opacity: 0;
+		}
+		100%{
+			transform: scale(1);
+      opacity: 1;
+		}
+	} 
 .linha{
   margin-top: 10px;
+  animation: entrada2 0.5s ease;
 }
+@keyframes entrada2{
+		0%{
+      opacity: 0;
+		}
+    50%{
+      opacity: 0.2;
+    }
+    80%{
+      opacity: 0.5;
+    }
+		100%{
+      opacity: 1;
+		}
+	} 
 .linha button{
   font-size: 30px;
+}
+.pe{
+  bottom: 0;
+  animation: entrada2 0.5s ease;
+}
+.pe h4{
+  margin-top: 4%;
+  margin-bottom: 5%;
 }
